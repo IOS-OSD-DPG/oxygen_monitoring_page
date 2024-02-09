@@ -1,0 +1,104 @@
+---
+# front matter tells Jekyll to process Liquid
+# Front matter is a snippet of YAML placed between two triple-dashed lines at the start of a file.
+# You can use front matter to set variables for the page.
+
+layout: default
+title: Line P Monitoring
+stations:
+  - P4
+  - P26
+plot_types:
+  - oxygen-on-density-surfaces
+---
+
+<h1>{{ page.title }}</h1>
+<p style="color: grey">
+    February 2024<br><br>
+</p>
+<p>
+    This page hosts plots of data from stations P4 and P26 (Ocean Station Papa - OSP) on Line P.
+    The data were obtained from the Institute of Ocean Sciences (IOS) and National Oceanographic
+    and Atmospheric Administration (NOAA) archives. More information on the Line P Program is
+    available on the <a href="https://www.waterproperties.ca/">Water Properties</a> website,
+    including a full list of publications.
+</p>
+
+<!--Tab links-->
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Location')" id="defaultOpen">
+        Location
+    </button>
+    <button class="tablinks" onclick="openTab(event, 'Oxygen')">
+        Oxygen on density surfaces
+    </button>
+</div>
+
+<!--Tab content-->
+<div id="Location" class="tabcontent">
+    <a href="./figures/Line_Psmall.png">
+        <img src="./figures/Line_Psmall.png" loading="lazy">
+    </a>
+    <p>
+        Figure from <a href="https://www.waterproperties.ca/">Water Properties</a>.
+    </p>
+</div>
+
+<div id="Oxygen" class="tabcontent">
+    <p>
+        The plots below were reproduced from Crawford & Pen&#771;a (2021) and show oxygen on potential
+        density anomaly surfaces. The Python code for carrying
+        out the data processing and plotting for figures is located on
+        <a href="https://github.com/hhourston/ios_profile_data_visualization">GitHub</a>.
+    </p>
+
+    <a href="./figures/P26_data_oxy_vs_pot_dens_anom_1degfit_1950-2023.png">
+        <img src="./figures/P26_data_oxy_vs_pot_dens_anom_1degfit_1950-2023.png" loading="lazy" width="500">
+    </a>
+
+    <a href="./figures/P4_data_oxy_vs_pot_dens_anom_2degfit_1950-2023.png">
+        <img src="./figures/P4_data_oxy_vs_pot_dens_anom_2degfit_1950-2023.png" loading="lazy" width="500">
+    </a>
+
+    <p>
+        The potential density anomaly surfaces 26.9, 26.7 and 26.5 correspond to the potential density
+        surfaces 1026.9 kg/m<sup>3</sup>, 1026.7 kg/m<sup>3</sup> and 1026.5 kg/m<sup>3</sup>,
+        respectively. 1-degree and 2-degree trends were computed using least squares.
+    </p>
+</div>
+
+<h2>References</h2>
+<p>
+    Crawford and Peña. 2021. In Boldt et al. 2021. State of the physical, biological and selected
+    fishery resources of Pacific Canadian marine ecosystems in 2020. Can. Tech. Rep. Fish. Aquat.
+    Sci. 3434: vii + 231 p.<br><br>
+
+<!--    William R. Crawford & M. Angelica Peña (2016) Decadal Trends in Oxygen Concentration in Subsurface-->
+<!--    Waters of the Northeast Pacific Ocean, Atmosphere-Ocean, 54:2, 171-192,-->
+<!--    DOI: 10.1080/07055900.2016.1158145<br><br>-->
+
+<!--    William R. Crawford & M. Angelica Peña (2013) Declining Oxygen on the British Columbia Continental-->
+<!--    Shelf, Atmosphere-Ocean, 51:1, 88-103, DOI:10.1080/07055900.2012.753028<br><br>-->
+
+<!--    Only show most relevant refs?-->
+<!--    Garcia H. E., K.W. Weathers, C.R. Paver, I. Smolyar, T.P. Boyer, R.A. Locarnini, M.M. Zweng, A.V.-->
+<!--    Mishonov, O.K. Baranova, D. Seidov, and J.R. Reagan (2019). World Ocean Atlas 2018, Volume 3:-->
+<!--    Dissolved Oxygen, Apparent Oxygen Utilization, and Dissolved Oxygen Saturation. A. Mishonov-->
+<!--    Technical Editor. NOAA Atlas NESDIS 83, 38pp. (Available at-->
+<!--    https://www.nodc.noaa.gov/OC5/woa18/pubwoa18.html).<br><br>-->
+
+<!--    Garcia, H. E., T. P. Boyer, R. A. Locarnini, O. K. Baranova, M. M. Zweng (2018). World Ocean-->
+<!--    Database 2018: User’s Manual (prerelease). A.V. Mishonov, Technical Ed., NOAA, Silver Spring, MD-->
+<!--    (Available at https://www.NCEI.noaa.gov/OC5/WOD/pr_wod.html).<br><br>-->
+
+<!--    Hernan E. Garcia & Louis I. Gordon (1992) Oxygen solubility in seawater: Better fitting equations,-->
+<!--    Limnol. Oceanogr., 37(6), 1992, 1 307-1312.-->
+</p>
+
+<h2>Contact</h2>
+<p>
+    Data Products Team, Ocean Sciences Division<br>
+    DFO.PAC.SCI.IOSData-DonneesISO.SCI.PAC.MPO@dfo-mpo.gc.ca
+</p>
+
+<script src="main.js"></script>
