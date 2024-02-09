@@ -4,9 +4,12 @@ The link to the webpage is [here](https://ios-osd-dpg.github.io/Line_P_Monitorin
 and can also be found by navigating to Deployments > github-pages on the right-hand side 
 of the window. All figures are provisional. 
 
-## Data preparation steps
+## Data preparation
 The Python code for carrying out the processing steps is located at 
 https://github.com/hhourston/ios_profile_data_visualization.
+<details>
+<summary>Processing steps:</summary>
+
 1. Do oxygen data unit conversions from percent or mL/L to umol/kg as needed. 
    1. Use James Hannah’s ios-inlets code: https://github.com/cyborgsphinx/ios-inlets, but correct the oxygen percent to mL/L conversion to follow Garcia and Gordon (1992).
    2. Put correct-unit data into one CSV table for each station.
@@ -26,8 +29,9 @@ https://github.com/hhourston/ios_profile_data_visualization.
 10.	Do annual averaging on each select potential density anomaly surface by taking one single average for each year for each station.
 11.	Plot oxygen versus time for each station with all select potential densities on the same plot.
     1. Fit a linear or quadratic best-fit-line to the points.
+</details>
 
-## Viewing Changes Locally
+## Viewing changes locally
 The site is generated using [Jekyll](https://jekyllrb.com), which is the default static site generator for [GitHub Pages](https://pages.github.com).
 Because the site is generated using templating, opening `index.html` directly in a browser is not going to produce great results, and will look nothing like the finished product.
 In order to view your changes locally, you need to install Jekyll and then run `jekyll serve` from the root of the project (the same directory as this readme).
