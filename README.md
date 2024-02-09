@@ -1,5 +1,8 @@
 # Line_P_Monitoring_Page
-Web page for hosting Line P monitoring plots. All figures are provisional.
+This repository hosts the web page for Line P monitoring plots. 
+The link to the webpage is [here](https://ios-osd-dpg.github.io/Line_P_Monitoring_Page/),
+and can also be found by navigating to Deployments > github-pages on the right-hand side 
+of the window. All figures are provisional. 
 
 ## Data preparation steps
 The Python code for carrying out the processing steps is located at 
