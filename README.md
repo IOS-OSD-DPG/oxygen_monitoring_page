@@ -1,6 +1,7 @@
-# Line_P_Monitoring_Page
-This repository hosts the web page for Line P monitoring plots. 
-The link to the webpage is [here](https://ios-osd-dpg.github.io/Line_P_Monitoring_Page/),
+# oxygen_monitoring_page
+Formerly *Line_P_Monitoring_Page*. This repository hosts the web page for dissolved oxygen monitoring plots, including for Line P. 
+Oxygen plots for station CS09 and the broader BC shelf coming next. 
+The link to the webpage is [here](https://ios-osd-dpg.github.io/oxygen_monitoring_page/),
 and can also be found by navigating to Deployments > github-pages on the right-hand side 
 of the window. All figures are provisional. 
 
